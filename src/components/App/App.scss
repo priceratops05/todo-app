@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+.app {
+    align-items: center;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 100px;
+}

@@ -1,0 +1,20 @@
+// Colors
+$dark-grey: #393259;
+$darker-grey: #25243B;
+$pink: #FAA2B4;
+$orange: #F2AC83;
+$green:#CAFAC2;
+$portage: #9ba8ec;
+$shocking-pink: #F416CA;
+// Theme variables
+$background: $dark-grey;
+$navbar: $shocking-pink;
+$font-dark: $darker-grey;
+$default: $portage;
+$default-dark: darken($default, 5%);
+$high: $pink;
+$mid: $orange;
+$low: $green;
+$high-dark: darken($high, 5%);
+$mid-dark: darken($mid, 5%);
+$low-dark: darken($low, 8%);

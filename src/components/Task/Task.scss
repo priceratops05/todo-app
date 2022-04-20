@@ -1,0 +1,67 @@
+@import '../../styles/variables.scss';
+.task {
+    background-color: $default;
+    border-radius: 10px;
+    box-shadow: 7px 8px 20px 2px rgba(0, 0, 0, 0.50);
+    color: $font-dark;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    width: 400px;
+    &:hover {
+        transform: scale(1.05);
+    }
+    .show {
+        background-color: $default-dark;
+    }
+    &>* {
+        padding: 0 15px 15px;
+    }
+    .date {
+        font-size: 14px;
+        font-weight: 200;
+        padding-top: 15px;
+        // margin-bottom: 5px;
+    }
+    .status {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        font-size: 14px;
+        padding-top: 15px;
+    }
+    &.high {
+        background-color: $high;
+        .show {
+            background-color: $high-dark;
+        }
+    }
+    &.mid {
+        background-color: $mid;
+        .show {
+            background-color: $mid-dark;
+        }
+    }
+    &.low {
+        background-color: $low;
+        .show {
+            background-color: $low-dark;
+        }
+    }
+    .pretty {
+        .svg {
+            color: $font-dark !important;
+        }
+        label:before {
+            border-color: #393259 !important;
+        }
+    }
+}
